@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:travel_app/core/constants/color_palatte.dart';
+import 'package:travel_app/presentations/screens/home_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -15,7 +16,21 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(),
+        body: IndexedStack(
+          index: _currentIndex,
+          children: [
+            HomeScreen(),
+            Container(
+              color: Colors.red,
+            ),
+            Container(
+              color: Colors.yellow,
+            ),
+            Container(
+              color: Colors.green,
+            ),
+          ],
+        ),
         // ignore: prefer_const_literals_to_create_immutables, prefer_const_constructors
         bottomNavigationBar: SalomonBottomBar(
             onTap: (index) {
