@@ -49,6 +49,8 @@ dev_dependencies:
   flutter_svg: ^2.0.3
   smooth_page_indicator: ^1.0.1
   hive_flutter: ^1.1.0
+  salomon_bottom_bar: ^3.3.1
+  font_awesome_flutter: ^10.4.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

@@ -3,6 +3,7 @@ import 'package:travel_app/core/constants/color_palatte.dart';
 import 'package:travel_app/core/helpers/local_storage_helper.dart';
 import 'package:travel_app/presentations/screens/splash.dart';
 import 'package:travel_app/routes.dart';
+// ignore: depend_on_referenced_packages
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {

@@ -22,6 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
     NextIntroScreen();
   }
 
+  // ignore: non_constant_identifier_names
   void NextIntroScreen() async {
     await (Future.delayed(Duration(seconds: 2)));
     final ignoreIntroScreen =
